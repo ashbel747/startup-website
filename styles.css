@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(1, 1, 35);
+    color: white;
+    min-height: 100vh;
+}
+header{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    display:flex;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.15s;
+}
+.nav-links a:hover{
+    opacity: 0.6;
+}
+.toggle-button{
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 20px;
+}
+
+.hero-section{
+    background-image: url(Assets/hero\ background.png);
+    background-size: cover;
+    background-position: centre;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero-title{
+    font-size: 60px;
+}
+.cta-btn{
+    padding: 1rem 3rem ;
+}
