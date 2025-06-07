@@ -263,12 +263,12 @@ nav{
     word-wrap: break-word;
 }
 .message.user .message-bubble{
-    background: blue;
+    background: linear-gradient(135deg, #ff00c8, #ff4805);
     color: white;
     border-bottom-right-radius: 4px;
 }
 .message.bot .message-bubble{
-    background: white;
+    background: rgb(173, 173, 173);
     color: rgb(33, 33, 33);
     border-bottom-left-radius: 4px;
 }
@@ -363,7 +363,9 @@ nav{
 .faq-answ{
     display: none;
     font-size: 1.1rem;
-    color: white;
+    background-color: rgb(185, 185, 185);
+    color: rgb(41, 41, 41);
+    border-radius: 20px;
     padding: 1em;
     transition: all 0.3s ease;
 }
@@ -416,7 +418,8 @@ footer{
 
 
 body.light-mode{
-    background-color: rgb(225, 225, 225);
+    background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
     color: black;
 }
+
 
