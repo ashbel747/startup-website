@@ -438,7 +438,7 @@ footer{
 
 @media (max-width: 500px) {
   nav.container ul.nav-links {
-    flex-direction: column;
+    flex-direction: row;
     padding: 0;
   }
   nav.container ul.nav-links li {
@@ -446,11 +446,11 @@ footer{
   }
 
   .hero-section div {
-    text-align: center;
+    text-align: left;
     padding: 20px;
   }
   .hero-section .cta-btn {
-    width: 100%;
+    padding: 1.5em;
     max-width: 300px;
   }
 
@@ -470,21 +470,23 @@ footer{
   }
 
   .carousel-tr {
-    flex-direction: column;
+    flex-direction: row;
   }
   .vehicle-card {
     width: 100%;
     margin-bottom: 20px;
   }
   .vehicle-img img {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
   }
 
   .testimonial-box {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 1.3em;
   }
   .testimonial-profile img {
     width: 80px;
@@ -497,28 +499,36 @@ footer{
     gap: 20px;
   }
   .team-card {
-    width: 100%;
+    width: 300px;
+    margin: auto;
   }
   .team-img img {
-    width: 100%;
-    max-width: 200px;
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
     height: auto;
     margin: 0 auto;
     display: block;
   }
+  .brand-bar{
+    justify-content: center;
+    font-size: 25px;
+  }
 
   .chat-interface {
     padding: 10px;
+    width: 400px;
   }
   .chat-input-container {
-    flex-direction: column;
+    flex-direction: row;
   }
   .chat-input {
     width: 100%;
     margin-bottom: 10px;
   }
   .send-button {
-    width: 100%;
+    width: 50px;
+    height: 50px;
   }
 
   .faq-card {
@@ -526,17 +536,20 @@ footer{
   }
 
   .client-input {
-    flex-direction: column;
+    flex-direction: row;
   }
   .client-input input {
-    width: 100%;
+    width: 200px;
     margin-bottom: 10px;
   }
   .client-message {
-    width: 100%;
+    width: 425px;
   }
   .submit-btn button {
-    width: 100%;
+    width: 80px;
+  }
+  footer{
+    padding-top: 50px;
   }
 }
 
