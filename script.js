@@ -58,3 +58,41 @@ faqs.forEach(faq => {
         faq.classList.toggle("open");
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".carousel-tr");
+    const dots = document.querySelectorAll(".carousel-dots .dot");
+    let currentIndex = 0;
+
+    function getVisibleCards() {
+        const width = window.innerWidth;
+        if (width <= 500) return 1;
+        if (width <= 768) return 2;
+        return 3;
+    }
+
+    function updateCarousel() {
+        const visibleCards = getVisibleCards();
+        const cardWidth = document.querySelector(".vehicle-card").offsetWidth + 16; 
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentIndex);
+        });
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            currentIndex = index;
+            updateCarousel();
+        });
+    });
+
+    window.addEventListener("resize", () => {
+        updateCarousel();
+    });
+
+    updateCarousel(); 
+});
+

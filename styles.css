@@ -1,3 +1,15 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(1, 1, 35);
@@ -8,9 +20,10 @@ header{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
     padding: 1rem 0;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 nav{
     display: flex;
@@ -25,10 +38,10 @@ nav{
 .nav-links a{
     color: white;
     text-decoration: none;
-    transition: opacity 0.15s;
+    transition: color 0.15s;
 }
 .nav-links a:hover{
-    opacity: 0.6;
+    color: #333;
 }
 .toggle-button{
     background: rgba(255, 255, 255, 0.1);
@@ -92,12 +105,14 @@ nav{
     overflow: hidden;
 }
 .carousel-box{
-    
+    scroll-snap-type: x mandatory;
     width: 100%;
+    overflow-x: auto;
 }
 .carousel-tr{
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: max-content;
 }
 .vehicle-card{
     flex: 0 0 250px;
@@ -106,6 +121,10 @@ nav{
     padding: 16px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: padding 0.3s;
+}
+.vehicle-card:hover{
+    padding: 1.1em;
 }
 .vehicle-info{
     flex-grow: 1;
@@ -206,6 +225,10 @@ nav{
     padding: 16px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: padding 0.3s;
+}
+.team-card:hover{
+    padding: 1.1em;
 }
 .team-info{
     flex-grow: 1;
@@ -414,6 +437,29 @@ input:focus {
 }
 footer{
     text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .vehicle-card {
+        flex: 0 0 90%;
+        margin-right: 8px;
+    }
+
+    .carousel-tr {
+        gap: 8px;
+    }
+
+    .about-us-container,
+    .team-tr {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chat-interface,
+    .client-input {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 
