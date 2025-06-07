@@ -436,28 +436,110 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width: 500px) {
-    .vehicle-card {
-        flex: 0 0 90%;
-        margin-right: 8px;
-    }
+@media (max-width: 500px) {
+  nav.container ul.nav-links {
+    flex-direction: column;
+    padding: 0;
+  }
+  nav.container ul.nav-links li {
+    margin: 10px 0;
+  }
 
-    .carousel-tr {
-        gap: 8px;
-    }
+  .hero-section div {
+    text-align: center;
+    padding: 20px;
+  }
+  .hero-section .cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
 
-    .about-us-container,
-    .team-tr {
-        flex-direction: column;
-        align-items: center;
-    }
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .about-us-container > div {
+    width: 100%;
+  }
+  .about-us-container img {
+    max-width: 100%;
+    height: auto;
+  }
 
-    .chat-interface,
-    .client-input {
-        flex-direction: column;
-        width: 100%;
-    }
+  .carousel-tr {
+    flex-direction: column;
+  }
+  .vehicle-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .vehicle-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonial-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .testimonial-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  .team-tr {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .team-card {
+    width: 100%;
+  }
+  .team-img img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .chat-interface {
+    padding: 10px;
+  }
+  .chat-input-container {
+    flex-direction: column;
+  }
+  .chat-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .send-button {
+    width: 100%;
+  }
+
+  .faq-card {
+    width: 100%;
+  }
+
+  .client-input {
+    flex-direction: column;
+  }
+  .client-input input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .client-message {
+    width: 100%;
+  }
+  .submit-btn button {
+    width: 100%;
+  }
 }
+
 
 
 body.light-mode{
