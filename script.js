@@ -30,3 +30,15 @@ document.querySelectorAll('.navigation-link').forEach(link => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const counterElement = document.getElementById("visitor-count");
+    let visitCount = localStorage.getItem("visitCount");
+    if (!visitCount) {
+        visitCount = 1;
+    } else {
+        visitCount = parseInt(visitCount) + 1;
+    }
+    localStorage.setItem("visitCount", visitCount);
+    counterElement.textContent = visitCount;
+});
