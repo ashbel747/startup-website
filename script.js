@@ -42,3 +42,19 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("visitCount", visitCount);
     counterElement.textContent = visitCount;
 });
+
+const faqs = document.querySelectorAll(".faq-card");
+
+faqs.forEach(faq => {
+    const question = faq.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+        faqs.forEach(f => {
+            if (f !==faq) {
+                f.classList.remove("open");
+            }
+        });
+
+        faq.classList.toggle("open");
+    });
+});
