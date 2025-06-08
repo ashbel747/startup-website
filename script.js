@@ -125,4 +125,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const submitBtn = document.querySelector(".submit-btn button");
+
+    submitBtn.addEventListener("click", () => {
+        alert("Thanks for submitting. We'll reach you once we launch!");
+    });
+});
 
