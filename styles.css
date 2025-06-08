@@ -628,60 +628,84 @@ footer{
 @media (max-width: 768px) {
   nav.container ul.nav-links {
     flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
+    padding: 0;
   }
 
   .hero-section div {
-    text-align: center;
-    padding: 30px;
+    text-align: left;
+    padding: 20px;
   }
   .hero-section .cta-btn {
-    max-width: 350px;
+    max-width: 300px;
+    padding: 1.5em;
   }
 
   .about-us-container {
+    display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding:  20px;
     gap: 30px;
+  }
+  .about-us-container > div {
+    width: 100%;
+  }
+  .about-us-container img {
+    max-width: 100%;
+    height: auto;
   }
 
   .carousel-tr {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
   }
   .vehicle-card {
     width: 100%;
+    margin-bottom: 20px;
+  }
+  .vehicle-img img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
   }
 
   .testimonial-box {
+    display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    margin: 1.3em;
     text-align: center;
   }
 
   .team-tr {
     flex-direction: column;
-    align-items: center;
+    gap: 30px;
   }
   .team-card {
-    width: 100%;
-    max-width: 400px;
+    max-width: 300px;
+  }
+  .team-img img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    height: auto;
+    margin: 0 auto;
+    display: block;
   }
 
   .chat-interface {
-    width: 100%;
+    width: 400px;
     padding: 15px;
   }
   .chat-input-container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
   .chat-input {
     width: 100%;
+    margin-bottom: 10px;
   }
   .send-button {
-    width: 100%;
+    width: 50px;
+    height: 50px;
   }
 
   .faq-card {
@@ -689,23 +713,21 @@ footer{
   }
 
   .client-input {
-    flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
+    flex-direction: row;
   }
   .client-input input {
-    width: 100%;
+    width: 200px;
+    margin-bottom: 10px;
   }
   .client-message {
-    width: 100%;
+    width: 425px;
   }
   .submit-btn button {
-    width: 100%;
-    padding: 10px;
+    width: 80px;
   }
 
   footer {
-    padding: 40px 20px;
+    padding-top: 50px;
   }
 }
 
