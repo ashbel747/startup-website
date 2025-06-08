@@ -625,6 +625,89 @@ footer{
     padding-top: 50px;
   }
 }
+@media (max-width: 768px) {
+  nav.container ul.nav-links {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .hero-section div {
+    text-align: center;
+    padding: 30px;
+  }
+  .hero-section .cta-btn {
+    max-width: 350px;
+  }
+
+  .about-us-container {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .carousel-tr {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .vehicle-card {
+    width: 100%;
+  }
+
+  .testimonial-box {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .team-tr {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .chat-interface {
+    width: 100%;
+    padding: 15px;
+  }
+  .chat-input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .chat-input {
+    width: 100%;
+  }
+  .send-button {
+    width: 100%;
+  }
+
+  .faq-card {
+    width: 100%;
+  }
+
+  .client-input {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .client-input input {
+    width: 100%;
+  }
+  .client-message {
+    width: 100%;
+  }
+  .submit-btn button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+}
 
 
 
