@@ -96,3 +96,33 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCarousel(); 
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("audienceToggle");
+    const buyerInfo = document.getElementById("buyerInfo");
+    const sellerInfo = document.getElementById("seller-info");
+    const buyerPart = document.getElementById("buyer-part");
+    const sellerPart = document.getElementById("seller-part");
+
+    buyerInfo.classList.add("active");
+    sellerInfo.classList.remove("active");
+
+    toggle.addEventListener("change", () => {
+        const isSeller = toggle.checked;
+
+        if (isSeller) {
+            buyerInfo.classList.remove("active");
+            sellerInfo.classList.add("active");
+
+            buyerPart.classList.remove("activate");
+            sellerPart.classList.add("activate");
+        } else {
+            sellerInfo.classList.remove("active");
+            buyerInfo.classList.add("active");
+
+            sellerPart.classList.remove("activate");
+            buyerPart.classList.add("activate");
+        }
+    });
+});
+
+

@@ -90,6 +90,83 @@ nav{
     object-fit: cover;
 }
 
+.audience-title{
+    padding: 1em;
+    font-size: 30px;
+}
+.audience-box{
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider:before {
+  content: "";
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+  top: 4px;
+  left: 4px;
+}
+
+.audience-input:checked + .slider {
+  background-color: #1f1e3f;
+}
+
+.audience-input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.audience-info {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+}
+
+.audience-info.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .explore-title{
     padding: 1em;
     font-size: 30px;
@@ -510,11 +587,7 @@ footer{
     margin: 0 auto;
     display: block;
   }
-  .brand-bar{
-    justify-content: center;
-    font-size: 25px;
-  }
-
+  
   .chat-interface {
     padding: 10px;
     width: 400px;
