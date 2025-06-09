@@ -454,7 +454,6 @@ nav{
 
 .sample-questions {
     padding: 2rem;
-    border-radius: 15px;
     margin-top: 2rem;
 }
 
@@ -533,9 +532,10 @@ nav{
 .faq-question{
     background: white;
     color: #2d2d2d;
-    margin: 0.5rem 0;
+    margin: auto;
     padding: 0.75rem;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     border: none;
     width: 100%;
     font-size: 16px;
@@ -553,7 +553,8 @@ nav{
     font-size: 1.1rem;
     background: white;
     color: rgb(41, 41, 41);
-    border-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     padding: 1em;
     transition: all 0.3s ease;
 }
