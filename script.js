@@ -291,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function getFallbackResponse(message) {
             // Simple keyword-based responses
-            if (message.includes('founder') || message.includes('startup')) {
+            if (message.includes('founder') || message.includes('startup') || message.includes('background')) {
                 return "Khaled Motors was founded by Ashbel King'ori to provide a marketplace for buying and selling cars.";
             } else if (message.includes('solve')) {
                 return "Our company offers a marketplace where on can buy and sell cars in a transparent and seamless way.";
