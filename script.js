@@ -1,4 +1,13 @@
-//Adding light mode toggle
+//CTA-button alert
+document.addEventListener("DOMContentLoaded", () => {
+    const ctabtn = document.querySelector(".cta-btn");
+
+    ctabtn.addEventListener("click", () => {
+        alert("Thanks for showing interest. You can buy a car once we launch!");
+    });
+});
+
+//light mode toggle
 const toggleButton = document.getElementById("themeToggle");
 const themeIcon = toggleButton.querySelector(".theme-icon");
 const body = document.body;
@@ -32,6 +41,7 @@ document.querySelectorAll('.navigation-link').forEach(link => {
     });
 });
 
+//visitor count
 document.addEventListener("DOMContentLoaded", () => {
     const counterElement = document.getElementById("visitor-count");
     let visitCount = localStorage.getItem("visitCount");
@@ -44,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     counterElement.textContent = visitCount;
 });
 
+//faq question animation
 const faqs = document.querySelectorAll(".faq-card");
 
 faqs.forEach(faq => {
@@ -60,7 +71,7 @@ faqs.forEach(faq => {
     });
 });
 
-
+//carousel cards animation
 document.addEventListener("DOMContentLoaded", () => {
     const track = document.querySelector(".carousel-tr");
     const dots = document.querySelectorAll(".carousel-dots .dot");
@@ -97,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCarousel(); 
 });
 
+//audience-switch
 document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.getElementById("audienceToggle");
     const buyerInfo = document.getElementById("buyerInfo");
@@ -126,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+//message submission alert
 document.addEventListener("DOMContentLoaded", () => {
     const submitBtn = document.querySelector(".submit-btn button");
 
@@ -185,7 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
         When answering questions, be conversational, enthusiastic, and informative. Always respond as if you are representing Khaled Motors. Provide specific details when asked about projects, skills, or experiences. Be proud of your work in generative AI and its impact on technology.
         `;
 
-        // Initialize Puter
+        // Initializing Puter
         let puterInitialized = false;
 
         async function initializePuter() {
