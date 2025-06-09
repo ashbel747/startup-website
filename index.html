@@ -222,38 +222,54 @@
                 </div>
             </section>
 
-            <section id="chatbot" class="chatbot">
-                <div class="chatbot-container">
+             <section id="chatbot" class="chatbot-section section">
+                <div class="container chatbot-container">
                     <div class="chatbot-title">
-                        <h1>Ask AI</h1>
+                        <h2>AI Assistant</h2>
                     </div>
+
+                    <div class="instructions">
+                        <p><strong>Instructions:</strong> Ask me about Khaled Motors background, team, vehicles and how to get in touch with us!</p>
+                    </div>
+
                     <div class="chat-interface">
                         <div class="chat-messages" id="chatMessages">
                             <div class="message bot">
                                 <div class="message-avatar bot-avatar">AI</div>
                                 <div class="message-bubble">
-                                    Hi! I can tell you anything about our company, our team and our vehicles.
+                                    Hi! I'm Michael's AI assistant. I can tell you about Khaled Motors story, team, vehicles and how to get in touch. What would you like to know?
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="typing-indicator" id="typingIndicator">
-                            <div class="message-avatar bot-avatar">AI</div>
-                            <div class="typing-dots">
-                                <div class="typing-dot"></div>
-                                <div class="typing-dot"></div>
-                                <div class="typing-dot"></div>
-                            </div>
-                            <span>Thinking...</span>
+                    
+                    <div class="typing-indicator" id="typingIndicator">
+                        <div class="message-avatar bot-avatar">AI</div>
+                        <div class="typing-dots">
+                            <div class="typing-dot"></div>
+                            <div class="typing-dot"></div>
+                            <div class="typing-dot"></div>
                         </div>
+                        <span>Thinking...</span>
+                    </div>
 
-                        <div class="chat-input-container">
-                            <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything about our company, our team and our vehicles">
-                            <button class="send-button" id="sendButton">➤</button>
-                        </div>
+                    <div class="chat-input-container">
+                        <input type="text" class="chat-input" id="chatInput" placeholder="Ask me about Michael's background, skills, or projects...">
+                        <button class="send-button" id="sendButton">➤</button>
                     </div>
                 </div>
-            </section>
+
+                <div class="sample-questions">
+                    <h3>Sample Questions (Click to try):</h3>
+                    <ul>
+                        <li onclick="askQuestion('What is Khaled Motors startup about?')">What is Khaled Motors startup about?</li>
+                        <li onclick="askQuestion('What problem does Khaled Motors solve?')">What problem does Khaled Motors solve?</li>
+                        <li onclick="askQuestion('What is Khaled Motors vision?')">What is Khaled Motors vision?</li>
+                        <li onclick="askQuestion('Why services do you offer?')">What services do you offer?</li>
+                        <li onclick="askQuestion('How can someone contact you?')">How can someone contact you?</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
             <section>
                 <div class="faq-title">
@@ -315,6 +331,8 @@
             </p>
             <p class="visitor-counter">Visitors: <span id="visitor-count">1234</span></p>               
         </footer>
+        
+        <script src="https://js.puter.com/v2/"></script>
         <script src="script.js"></script>
     </body>
 </html>
